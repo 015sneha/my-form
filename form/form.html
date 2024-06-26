@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link rel="stylesheet" href="formstyle.css">                                    
+        <title>
+            form
+        </title>
+    </head>
+    <body>
+          <section class="container">
+            <div class="form-box">
+                <form name="myForm"  action="" onsubmit="return validateForm()" method="post">
+                    <h3>FORM</h3>
+                    <div class="form-group">
+                        <label for="fname">Full Name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="eg. Ravi kumar" autocomplete="off" required>         
+                    </div>
+                    <div class="form-group">
+                        <label for="dob" >Date Of Birth</label><br>
+                    <input type="date" id="dob" name="dob" required autocomplete="off" >
+                    
+                    </div>
+                    <div class="form-group">
+                        <label for="Email" >E-mail ID</label><br>
+                        <input type="email" id="Email" name="Email" placeholder="eg.ravikumar013@gmail.com" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneno" >Phone Number</label><br>
+                        <input type="tel" id="phoneno" name="phoneno" placeholder="eg.0123456789" required autocomplete="off">
+                       
+                    </div>
+                    <div class="form-group">
+                        <label for="password" >Password</label><br>
+                        <input type="password" id="password" name="password" required autocomplete="off">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="cpassword" >Confirm Password</label><br>
+                        <input type="password" id="cpassword" name="cpassword" autocomplete="off" required> 
+                        
+                    </div>
+                    <div class="form-group">
+                      <button type="reset"  class="btn"> Reset</button>
+                      <button type="submit" class="btn" >Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    <script src="formsjstyle.js"> </script>                                             
+    </body>
+</html>
